@@ -1,0 +1,14 @@
+@api = https://api.challenge.hennge.com/challenges/backend-recursion/004
+@auth_token = {{$exec python generate_auth.py}}
+
+### Mission 3 POST Request
+POST {{api}}
+Authorization: Basic {{auth_token}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "github_url": "https://gist.github.com/Jojo-GitH2/3d0cc450edf1e011bbbeb3fcfb492f38",
+  "contact_email": "jonahuka001@gmail.com",
+  "solution_language": "python"
+}
